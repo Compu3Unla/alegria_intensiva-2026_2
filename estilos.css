@@ -1,6 +1,62 @@
 @charset "UTF-8";
 /*configuraciones generales*/
 * {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--negro);
+    text-decoration: none;
     margin: 0;
     padding: 0;
+} 
+/*variables css*/
+:root {
+    --fuente-titulo: 'Fredoka', sans-serif;
+    --fuente-texto-subtitulos: 'Nunito Sans', sans-serif;
+    --rojo: #e63946;
+    --azul: #0077B6;
+    --blanco: #F8F9FA;
+    --gris: #696969;
+    --negro: #212529;
 }
+
+ h1 {
+     font-family:var(--fuente-titulo);
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--blanco); 
+ }
+
+ h2 {
+font-family: var(--fuente-texto-subtitulos);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--negro);
+ }
+
+ h3 {
+    font-size: 1.5rem;
+ }
+
+ p {
+    font-family: var(--fuente-texto-subtitulos);
+    font-weight: normal;
+    font-size: 1.25rem;
+    max-width: 800px;
+ }
+
+/*aca irian los estilo de las listas @tef
+ ul {
+    list-style: none;
+
+}*/
+
+/*header + nav*/
+
+/*index*/
+
+/*quienes somos*/
+
+/*que hacemos*/
+
+/*footer*/
