@@ -118,7 +118,8 @@ nav .boton-inicio:hover {
     transform: scale(1.1);
 }
 
-/*INDEX*//* HERO */
+/*INDEX*/
+/* HERO */
 
 
 .hero {
@@ -170,7 +171,7 @@ nav .boton-inicio:hover {
 .impacto {
     max-width: 1100px;
     width: 80%;
-    margin: 0 auto 45px; 
+    margin: 0 auto 45px;
 }
 
 
@@ -199,8 +200,7 @@ nav .boton-inicio:hover {
 
 .dato h3 {
     color: var(--azul);
-    font-family: var(--fuente-titulo);
-    font-size: 1.6rem;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
@@ -223,7 +223,7 @@ nav .boton-inicio:hover {
 
 .areas-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -254,10 +254,8 @@ nav .boton-inicio:hover {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 20px;
-    background: linear-gradient(
-        transparent 45%,
-        rgba(0, 0, 0, 0.75)
-    );
+    background: linear-gradient(transparent 45%,
+            rgba(0, 0, 0, 0.75));
     color: var(--blanco);
     font-weight: 700;
     font-size: 1rem;
@@ -268,7 +266,7 @@ nav .boton-inicio:hover {
     max-width: 1100px;
     width: 80%;
     margin: 0 auto;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .socios h2 {
@@ -287,9 +285,12 @@ nav .boton-inicio:hover {
 .socios-carrusel {
     display: flex;
     align-items: center;
-    gap: 45px; /* Espaciado uniforme entre los logos */
-    width: max-content; /* Se ajusta dinámicamente al ancho total de las imágenes */
-    animation: scrollInfinito 25s linear infinite; /* Ajusta los segundos si lo quieres más rápido o lento */
+    gap: 45px;
+    /* Espaciado uniforme entre los logos */
+    width: max-content;
+    /* Se ajusta dinámicamente al ancho total de las imágenes */
+    animation: scrollInfinito 25s linear infinite;
+    /* Ajusta los segundos si lo quieres más rápido o lento */
 }
 
 
@@ -317,8 +318,9 @@ nav .boton-inicio:hover {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        
+
         transform: translateX(-50%);
     }
 }
@@ -369,6 +371,7 @@ nav .boton-inicio:hover {
 .payasos-info p {
     width: auto;
 }
+
 /*FOOTER*/
 footer {
     background-color: var(--azul);
