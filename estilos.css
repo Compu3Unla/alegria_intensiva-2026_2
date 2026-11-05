@@ -605,6 +605,92 @@ nav .boton-inicio:hover {
     content: "Ver menos";
 }
 
+
+/*COMO AYUDAR*/
+.hero-section {
+    background-color: #ededed;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.hero-container {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+.hero-image-box {
+    flex: 400px;
+}
+
+
+.hero-image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+
+.hero-title {
+    color: #1a1a1a;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+
+.hero-text {
+    margin-bottom: 25px;
+    width: 564px;
+
+
+}
+
+
+.btn-campaign {
+    background-color: #e31b23;
+    color: #ffffff;
+    padding: 10px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    transition: background-color 0s ease;
+}
+
+
+.btn-campaign:hover {
+    background-color: #c5141b;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+
+
+
 /*FOOTER*/
 footer {
     background-color: var(--azul);
