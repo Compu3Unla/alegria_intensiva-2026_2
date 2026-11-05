@@ -37,11 +37,13 @@ h2 {
     font-size: 1.5rem;
     color: var(--negro);
     max-width: 800px;
+    margin: auto;
 }
 
 h3 {
     font-size: 1.5rem;
     max-width: 800px;
+    margin: auto;
 }
 
 p {
@@ -49,13 +51,18 @@ p {
     font-weight: normal;
     font-size: 1rem;
     max-width: 800px;
+    margin: auto;
 }
 
-/*aca irian los estilo de las listas @tef
- ul {
-    list-style: none;
 
-}*/
+ul {
+
+    list-style: disc;
+    padding-left: 20px;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 20px;
+}
 
 /*HEADER + NAV*/
 
@@ -286,11 +293,8 @@ nav .boton-inicio:hover {
     display: flex;
     align-items: center;
     gap: 45px;
-    /* Espaciado uniforme entre los logos */
     width: max-content;
-    /* Se ajusta dinámicamente al ancho total de las imágenes */
     animation: scrollInfinito 25s linear infinite;
-    /* Ajusta los segundos si lo quieres más rápido o lento */
 }
 
 
@@ -328,8 +332,89 @@ nav .boton-inicio:hover {
 
 /*QUIENES SOMOS*/
 
+.quienes-somos {
+    margin: auto;
+    padding-top: 40px;
+}
+
+.quienes-somos h1 {
+    color: var(--negro);
+    margin: auto;
+}
+
+.quienes-somos p {
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.quienes-somos article {
+    padding: auto;
+
+}
+
+.hospitales-info {
+    margin: auto;
+    max-width: 800px;
+}
+
+.hospitales-mapa {
+    margin: auto;
+    max-width: 800px;
+}
+
+/*activiades anuales*/
+
+.actividad-info p {
+    width: 600px;
+}
+
+.actividad-info h2 {
+    max-width: 600px;
+    margin: 0;
+}
+
+.actividad-izq {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 30px 80px;
+    justify-content: center;
+}
+
+.actividad-der {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 30px 80px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*QUE HACEMOS*/
-/*que hacemos*/
+
 .que-hacemos {
     background-color: var(--azul);
     color: var(--blanco);
