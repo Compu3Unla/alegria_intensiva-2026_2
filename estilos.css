@@ -158,6 +158,7 @@ nav .boton-inicio:hover {
 .hero-contenido h1 {
     font-size: 1.5rem;
     margin-top: 12px;
+    color: var(--negro);
 }
 
 .boton-campania {
@@ -183,18 +184,10 @@ nav .boton-inicio:hover {
     width: 100%;
 }
 
-.impacto {
-    max-width: 1100px;
-    width: 80%;
-    margin: auto 45px;
-}
-
-
 /* IMPACTO */
 .impacto {
-    max-width: 1100px;
     width: 80%;
-    margin: 0 auto 45px;
+    margin: 80px auto 45px;
 }
 
 .impacto h2 {
@@ -226,7 +219,6 @@ nav .boton-inicio:hover {
 
 /* AREAS DE ACCION */
 .areas-accion {
-    max-width: 1100px;
     width: 80%;
     margin: 0 auto 35px;
 }
@@ -245,11 +237,15 @@ nav .boton-inicio:hover {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
+    width: 100%;
+    height: 200px;
 }
 
 .area-card img {
     object-fit: cover;
     display: block;
+    width: 100%;
+    height: 100%;   
     transition: transform 0.3s ease;
 }
 
@@ -259,22 +255,24 @@ nav .boton-inicio:hover {
 
 .area-card a {
     position: absolute;
-    inset: auto 0 0 0;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px 10px;
     color: var(--blanco);
     font-weight: 700;
     font-size: 1rem;
-
+    text-align: center;
 }
 
 /* SOCIOS ACTIVOS - SCROLL INFINITO */
+
 .socios {
     max-width: 1100px;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -282,7 +280,6 @@ nav .boton-inicio:hover {
     font-size: 1.3rem;
     margin-bottom: 20px;
 }
-
 
 .slider-socios {
     width: 100%;
@@ -299,15 +296,15 @@ nav .boton-inicio:hover {
     animation: scrollInfinito 25s linear infinite;
 }
 
-
 .socios-carrusel:hover {
     animation-play-state: paused;
 }
 
-
 .socios-carrusel img {
+    display: block;
     height: 60px;
     width: auto;
+    max-width: 150px;
     object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.8;
@@ -319,14 +316,14 @@ nav .boton-inicio:hover {
     opacity: 1;
 }
 
-/* ANIMACIÓN KEYFRAMES */
+/* ANIMACION */
+
 @keyframes scrollInfinito {
     0% {
         transform: translateX(0);
     }
 
     100% {
-
         transform: translateX(-50%);
     }
 }
