@@ -127,12 +127,20 @@ nav .boton-inicio:hover {
 
 /*INDEX*/
 /* HERO */
-
+.header-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: transparent;
+}
 
 .hero {
-    position: relative;
     width: 100%;
-    height: 420px;
+    height: 500px;
     background-image: url('img-alegria-intensiva/web/index/hero-web.png');
     background-size: cover;
     background-position: center;
@@ -142,9 +150,9 @@ nav .boton-inicio:hover {
 /* TEXTO SOBRE LA IMAGEN */
 .hero-contenido {
     position: absolute;
-    bottom: 25px;
-    left: 7%;
-    z-index: 1;
+    bottom: 128px;
+    left: 60px;
+    z-index: 15;
 }
 
 .hero-contenido h1 {
@@ -178,7 +186,7 @@ nav .boton-inicio:hover {
 .impacto {
     max-width: 1100px;
     width: 80%;
-    margin: 0 auto 45px;
+    margin: auto 45px;
 }
 
 
@@ -224,7 +232,6 @@ nav .boton-inicio:hover {
 }
 
 .areas-accion h2 {
-    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -236,17 +243,13 @@ nav .boton-inicio:hover {
 
 .area-card {
     position: relative;
-    height: 190px;
     border-radius: 30px;
     overflow: hidden;
 }
 
 .area-card img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
-    filter: grayscale(100%);
     transition: transform 0.3s ease;
 }
 
@@ -256,23 +259,22 @@ nav .boton-inicio:hover {
 
 .area-card a {
     position: absolute;
-    inset: 0;
+    inset: auto 0 0 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
-    background: linear-gradient(transparent 45%,
-            rgba(0, 0, 0, 0.75));
+    align-items: center;
+    padding: 10px;
     color: var(--blanco);
     font-weight: 700;
     font-size: 1rem;
+
 }
 
 /* SOCIOS ACTIVOS - SCROLL INFINITO */
 .socios {
     max-width: 1100px;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -457,92 +459,151 @@ nav .boton-inicio:hover {
     width: auto;
 }
 
-
-
-/*COMO AYUDAR*/
-.hero-section {
-    background-color: #ededed;
-    padding: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/* centro de formación */
+.centro-formacion {
+    background-color: color-mix(in srgb, var(--gris) 10%, transparent);
+    padding: 40px 0;
 }
 
-
-.hero-container {
-    max-width: 1000px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
+/* columna */
+.centro-formacion>h2,
+.centro-formacion>p,
+.centro-formacion .form {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-.hero-image-box {
-    flex: 400px;
+/* separación texto formulario */
+.centro-formacion .form {
+    margin-top: 40px;
 }
 
-
-.hero-image-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-
-.hero-content {
-    flex: 1;
+.cursos-talleres-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 10px;
+    gap: 16px;
+    margin-top: 16px;
+    margin: auto;
 }
 
+.cursos-talleres-container label {
+    display: block;
+    margin-bottom: 6px;
+}
 
-.hero-title {
-    color: #1a1a1a;
-    font-size: 26px;
+.cursos-talleres-container input,
+.cursos-talleres-container textarea {
+    box-sizing: border-box;
+    border: 0;
+    background-color: var(--azul);
+    font-size: 1rem;
+    padding: 0 20px;
+    outline: none;
+    width: 100%;
+    margin: auto;
+}
+
+.cursos-talleres-container input::placeholder,
+.cursos-talleres-container textarea::placeholder {
+    color: var(--blanco);
+    opacity: 1;
+}
+
+.cursos-talleres-container input {
+    height: 36px;
+    border-radius: 30px;
+}
+
+.cursos-talleres-container textarea {
+    height: 150px;
+    padding: 16px 20px;
+    border-radius: 20px;
+    resize: none;
+}
+
+/* botón */
+.boton-enviar-form {
+    align-self: flex-start;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-family: var(--fuente-titulo);
     font-weight: 700;
-    line-height: 1;
-    margin-bottom: 20px;
-    max-width: 500px;
-}
-
-
-.hero-text {
-    margin-bottom: 25px;
-    width: 564px;
-
-
-}
-
-
-.btn-campaign {
-    background-color: #e31b23;
-    color: #ffffff;
-    padding: 10px 28px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0;
-    display: inline-block;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
-    transition: background-color 0s ease;
-}
-
-
-.btn-campaign:hover {
-    background-color: #c5141b;
-    transform: scale(1.1);
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
     transition: transform 0.2s ease;
 }
 
+.boton-enviar-form:hover {
+    transform: scale(1.1);
+}
 
+/* estudio e investigación */
+.estudio-investigacion {
+    padding: 40px 0;
+}
 
+.centros-info {
+    position: relative;
+    width: var(--ancho-contenido);
+    padding-bottom: 70px;
+}
 
+/* sacar la flechitadel summary */
+.colapsado {
+    list-style: none;
+    cursor: pointer;
+}
+
+.colapsado::-webkit-details-marker {
+    display: none;
+}
+
+/* parrafos como uno solo */
+.centros-info[open] .colapsado p {
+    margin-bottom: 0;
+}
+
+.expandido img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* botón ver más */
+.btn-ver-mas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-titulo);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: var(--blanco);
+    background-color: var(--azul);
+    border: 3px solid var(--azul);
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.btn-ver-mas::before {
+    content: "Ver más";
+}
+
+/* botón ver mas abierto */
+.centros-info[open] .btn-ver-mas {
+    background-color: transparent;
+    color: var(--azul);
+}
+
+.centros-info[open] .btn-ver-mas::before {
+    content: "Ver menos";
+}
 
 /*FOOTER*/
 footer {
@@ -552,7 +613,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     color: var(--blanco);
-    padding: 24px 66px 28px;
+    padding: 30px 66px 30px;
 }
 
 .footer-izq {
@@ -566,8 +627,7 @@ footer {
 }
 
 .footer-izq p {
-    font-size: 0.5rem;
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0;
     color: var(--blanco);
 }
