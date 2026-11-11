@@ -338,6 +338,7 @@ nav .boton-inicio:hover {
 .quienes-somos h1 {
     color: var(--negro);
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .quienes-somos p {
@@ -380,6 +381,10 @@ nav .boton-inicio:hover {
 }
 
 /*section hospitales mapa*/
+
+.hospitales {
+    margin-top: 30px;
+}
 
 .hospitales-info {
     margin: auto;
@@ -457,6 +462,11 @@ nav .boton-inicio:hover {
     margin: 0;
 }
 
+.actividades {
+    gap:30px;
+    margin-bottom: 30px;
+    }
+
 .actividad-izq {
     display: flex;
     flex-direction: row;
@@ -475,6 +485,14 @@ nav .boton-inicio:hover {
 
 /* reconocimientos */
 
+.reconocimientos {
+margin-bottom: 30px;
+    }
+
+    .reconocimientos-info {
+    margin-bottom: 125px;
+    }
+
 .reconocimientos-info h2 {
     max-width: 600px;
 }
@@ -482,6 +500,71 @@ nav .boton-inicio:hover {
 .reconocimientos-info p {
     width: 600px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -502,6 +585,7 @@ nav .boton-inicio:hover {
 
 .que-hacemos h1 {
     margin: auto;
+    margin-bottom: 15px;
 }
 
 /* payasos de hospital */
@@ -624,7 +708,7 @@ nav .boton-inicio:hover {
     padding-bottom: 70px;
 }
 
-/* sacar la flechitadel summary */
+/* sacar la flechita del summary */
 .colapsado {
     list-style: none;
     cursor: pointer;
@@ -726,6 +810,7 @@ nav .boton-inicio:hover {
     line-height: 1;
     margin-bottom: 20px;
     max-width: 500px;
+    margin-bottom: 15px;
 }
 
 
