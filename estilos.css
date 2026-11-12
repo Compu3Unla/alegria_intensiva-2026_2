@@ -244,7 +244,7 @@ nav .boton-inicio:hover {
     object-fit: cover;
     display: block;
     width: 100%;
-    height: 100%;   
+    height: 100%;
     transition: transform 0.3s ease;
 }
 
@@ -414,10 +414,20 @@ nav .boton-inicio:hover {
     left: 0;
 }
 
+.pin-ubicacion a {
+    position: static;
+}
+
 .pin-ubicacion img {
     position: absolute;
     width: 23px;
     height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.pin-ubicacion img:hover {
+    transform: scale(1.05);
 }
 
 .pin-1 {
@@ -426,13 +436,13 @@ nav .boton-inicio:hover {
 }
 
 .pin-2 {
-    left: 89%;
+    left: 88%;
     top: 39%;
 }
 
 .pin-3 {
-    left: 99%;
-    top: 40%;
+    left: 98%;
+    top: 39%;
 }
 
 .pin-4 {
@@ -447,7 +457,7 @@ nav .boton-inicio:hover {
 
 .pin-6 {
     left: 52%;
-    top: 71%;
+    top: 70%;
 }
 
 
@@ -463,9 +473,9 @@ nav .boton-inicio:hover {
 }
 
 .actividades {
-    gap:30px;
+    gap: 30px;
     margin-bottom: 30px;
-    }
+}
 
 .actividad-izq {
     display: flex;
@@ -486,12 +496,12 @@ nav .boton-inicio:hover {
 /* reconocimientos */
 
 .reconocimientos {
-margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
+}
 
-    .reconocimientos-info {
+.reconocimientos-info {
     margin-bottom: 125px;
-    }
+}
 
 .reconocimientos-info h2 {
     max-width: 600px;
@@ -501,7 +511,80 @@ margin-bottom: 30px;
     width: 600px;
 }
 
+.reconocimientos-img {
+    position: relative;
+    width: 100%;
+}
 
+.reconocimientos-img  img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.numeros-linea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.numeros-linea img {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.numeros-linea img:hover {
+    transform: scale(1.05);
+}
+
+/* Primera línea */
+
+.año-2012 {
+    left: 15%;
+    top: 10%;
+}
+
+.año-2013 {
+    left: 36%;
+    top: -7%;
+}
+
+.año-2014 {
+    left: 56%;
+    top: 10%;
+}
+
+.año-2015 {
+    left: 76%;
+    top: -7%;
+}
+
+/* Curva derecha y segunda línea */
+
+.año-2016 {
+    left: 81%;
+    top: 33%;
+}
+
+.año-2017 {
+    left: 62%;
+    top: 50%;
+}
+
+.año-2021 {
+    left: 41%;
+    top: 33%;
+}
+
+.año-2022 {
+    left: 20%;
+    top: 50%;
+}
 
 
 
@@ -906,12 +989,13 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    
-  
+
+
     nav {
         gap: 10px;
         flex-direction: column;
     }
+
     header.hero {
         height: 400px;
         flex-direction: column;
@@ -921,64 +1005,75 @@ footer {
         bottom: 80px;
         left: 40px;
     }
+
     areas-accion .areas-grid {
         grid-template-columns: repeat(2, 1fr);
-    }   
     }
-    .impacto{
-        gap: 20px;
-    }
-    .impacto-datos {
-        gap: 20px;
-      
-        
+}
+
+.impacto {
+    gap: 20px;
+}
+
+.impacto-datos {
+    gap: 20px;
+
+
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
     }
 
-    footer {
+    #menu-toggle:checked+nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
-    @media screen and (max-width: 600px) {
-        #menu-toggle {
-            display: block;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        #menu-toggle:checked + nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        nav {
+
+    nav {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-            
-        } header.hero {
-        height: 400px;
-        flex-direction: column; }
 
-        hero-contenido {
+    }
+
+    header.hero {
+        height: 400px;
+        flex-direction: column;
+    }
+
+    hero-contenido {
         bottom: 80px;
         left: 40px;
-        }
-        
-        }
-        .impacto-datos {
-            gap: 20px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        } 
-        .impacto {
-            gap: 20px;  
-        }
-        .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        }   
-    
+    }
+
+}
+
+.impacto-datos {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.impacto {
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
