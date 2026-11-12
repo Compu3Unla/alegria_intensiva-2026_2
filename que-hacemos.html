@@ -94,50 +94,51 @@
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" placeholder="Consultas y mensajes"></textarea>
                     </div>
-                    <a type="submit" class="boton-enviar-form">Formate Hoy</a>
+                    <button type="submit" class="boton-enviar-form">FORMATE HOY</button>
                 </form>
             </div>
         </section>
 
-        <!-- estudio e investigacion (details/summary) -->
-        <section class="estudio-investigacion">
-            <details class="centros-info">
-                <summary class="colapsado">
-                    <h2>Centros de estudio e investigación</h2>
-                    <p>
-                        El Centro de Estudios de Alegría Intensiva busca construir un espacio
-                        multidisciplinario de estudio, investigación, evaluación y difusión del
-                        impacto producido por el trabajo artístico del payaso profesional de
-                        hospital y otras organizaciones artísticas profesionales que desarrollan
-                        su accionar en el ámbito de la salud.
-                        Este espacio multidisciplinario contempla al equipo de salud, médicos,
-                        enfermeros, sociólogos, antropólogos, psicólogos, asistentes sociales,
-                        artistas, entre otras disciplinas.
-                    </p>
-                    <span class="btn-ver-mas" aria-hidden="true"></span>
-                </summary>
+       <!-- estudio e investigacion (checkbox) -->
+<section class="estudio-investigacion">
+    <div class="centros-info">
+        <h2>Centros de estudio e investigación</h2>
+        <p>
+            El Centro de Estudios de Alegría Intensiva busca construir un espacio
+            multidisciplinario de estudio, investigación, evaluación y difusión del
+            impacto producido por el trabajo artístico del payaso profesional de
+            hospital y otras organizaciones artísticas profesionales que desarrollan
+            su accionar en el ámbito de la salud.
+            Este espacio multidisciplinario contempla al equipo de salud, médicos,
+            enfermeros, sociólogos, antropólogos, psicólogos, asistentes sociales,
+            artistas, entre otras disciplinas.
+        </p>
 
-                <div class="expandido">
-                    <p>
-                        A partir de la existencia de un creciente interés científico a nivel
-                        mundial acerca de este impacto, entendemos como una responsabilidad
-                        crear espacios de intercambio, conversación e investigación al
-                        respecto, luego de 12 años de trabajo ininterrumpido de nuestra
-                        organización, en armonía con los hospitales pediátricos de referencia
-                        a nivel nacional.
-                        Durante 2019, en conjunto con el Hospital Garrahan y con el apoyo del
-                        Ministerio de Hábitat y Desarrollo Humano, logramos realizar una
-                        Encuesta de percepción del impacto del trabajo de payasos de Alegría
-                        Intensiva en el equipo de salud, en familiares y en los propios
-                        artistas de la ONG.
-                        La encuesta arrojó resultados importantes, muy alentadores y que se
-                        traducen como una invitación a continuar profundizando el análisis.
-                    </p>
-                    <img src="img-alegria-intensiva/web/que-hacemos/centros-estudio-investigacion.jpg"
-                        alt="Equipo trabajando en una mesa con materiales de manualidades" width="791" height="422">
-                </div>
-            </details>
-        </section>
+        <input type="checkbox" id="ver-mas" class="toggle-ver-mas">
+
+        <div class="expandido">
+            <p>
+                A partir de la existencia de un creciente interés científico a nivel
+                mundial acerca de este impacto, entendemos como una responsabilidad
+                crear espacios de intercambio, conversación e investigación al
+                respecto, luego de 12 años de trabajo ininterrumpido de nuestra
+                organización, en armonía con los hospitales pediátricos de referencia
+                a nivel nacional.
+                Durante 2019, en conjunto con el Hospital Garrahan y con el apoyo del
+                Ministerio de Hábitat y Desarrollo Humano, logramos realizar una
+                Encuesta de percepción del impacto del trabajo de payasos de Alegría
+                Intensiva en el equipo de salud, en familiares y en los propios
+                artistas de la ONG.
+                La encuesta arrojó resultados importantes, muy alentadores y que se
+                traducen como una invitación a continuar profundizando el análisis.
+            </p>
+            <img src="img-alegria-intensiva/web/que-hacemos/centros-estudio-investigacion.jpg"
+                alt="Equipo trabajando en una mesa con materiales de manualidades" width="791" height="422">
+        </div>
+
+        <label for="ver-mas" class="btn-ver-mas"></label>
+    </div>
+</section>
 
     </main>
     <!-- FOOTER -->
