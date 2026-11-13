@@ -15,17 +15,23 @@
 <body>
     <!-- HEADER (Navegacion) -->
     <header class="header-hero">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
         <nav>
+            <label for="menu-toggle" class="menu-hamburguesa"></label>
+
             <div class="inicio-contenedor">
                 <a href="index.html" class="boton-inicio">
                     <img src="img-alegria-intensiva/web/logo-header-color.svg" alt="Inicio" width="110" height="31">
                 </a>
             </div>
-            <a href="index.html">INICIO</a>
-            <a href="quienes-somos.html">QUIÉNES SOMOS</a>
-            <a href="que-hacemos.html">QUÉ HACEMOS</a>
-            <a href="como-ayudar.html">CÓMO AYUDAR</a>
-            <a href="#">CONTACTO</a>
+
+            <div class="menu-links">
+                <a href="quienes-somos.html">QUIÉNES SOMOS</a>
+                <a href="que-hacemos.html">QUÉ HACEMOS</a>
+                <a href="como-ayudar.html">CÓMO AYUDAR</a>
+                <a href="#">CONTACTO</a>
+            </div>
+
             <a href="#" class="donar-nav">DONÁ ACÁ</a>
         </nav>
     </header>
@@ -41,100 +47,116 @@
         </section>
 
         <!-- CONTENIDO PRINCIPAL -->
-            <!-- IMPACTO -->
-            <section class="impacto">
-                <h2>Impacto Alegría Intensiva</h2>
-                <ul class="impacto-datos">
-                    <li class="dato">
-                        <h3>+1.200.000</h3>
-                        <p>Niños y niñas alcanzados</p>
-                    </li>
-                    <li class="dato">
-                        <h3>+17 años</h3>
-                        <p>De labor ininterrumpida</p>
-                    </li>
-                    <li class="dato">
-                        <h3>+12 centros</h3>
-                        <p>Y hospitales en CABA y PBA</p>
-                    </li>
-                    <li class="dato">
-                        <h3>12 niños</h3>
-                        <p>Impactados con cada $12.000</p>
-                    </li>
-                </ul>
-            </section>
+        <!-- IMPACTO -->
+        <section class="impacto">
+            <h2>Impacto Alegría Intensiva</h2>
+            <ul class="impacto-datos">
+                <li class="dato">
+                    <h3>+1.200.000</h3>
+                    <p>Niños y niñas alcanzados</p>
+                </li>
+                <li class="dato">
+                    <h3>+17 años</h3>
+                    <p>De labor ininterrumpida</p>
+                </li>
+                <li class="dato">
+                    <h3>+12 centros</h3>
+                    <p>Y hospitales en CABA y PBA</p>
+                </li>
+                <li class="dato">
+                    <h3>12 niños</h3>
+                    <p>Impactados con cada $12.000</p>
+                </li>
+            </ul>
+        </section>
 
-            <!-- AREAS DE ACCION -->
-            <section class="areas-accion" id="hacemos">
-                <h2>Áreas de acción</h2>
-                <div class="areas-grid">
-                    <article class="area-card">
-                        <img src="img-alegria-intensiva/web/index/areas-accion/talleres-inactivo-web.png"
-                            alt="Talleres" width="373" height="200">
-                        <a href="#">Talleres</a>
-                    </article>
-                    <article class="area-card">
-                        <img src="img-alegria-intensiva/web/index/areas-accion/investigacion-inactivo-web.png"
-                            alt="Investigación" width="373" height="200">
-                        <a href="#">Investigación</a>
-                    </article>
-                    <article class="area-card">
-                        <img src="img-alegria-intensiva/web/index/areas-accion/alianzas-inactivo-web.png"
-                            alt="Alianzas" width="373" height="200">
-                        <a href="#">Alianzas</a>
-                    </article>
-                    <article class="area-card">
-                        <img src="img-alegria-intensiva/web/index/areas-accion/proyectos-ianctivo-web.png"
-                            alt="Proyectos especiales" width="373" height="200">
-                        <a href="#">Proyectos especiales</a>
-                    </article>
-                    <article class="area-card">
-                        <img src="img-alegria-intensiva/web/index/areas-accion/visitas-inactivo-web.png"
-                            alt="Visitas en terreno" width="373" height="200">
-                        <a href="#">Visitas en terreno</a>
-                    </article>
-                    <article class="area-card">
-                        <img src="img-alegria-intensiva/web/index/areas-accion/comunidad-inactivo-web.png"
-                            alt="Comunidad" width="373" height="200">
-                        <a href="#">Comunidad</a>
-                    </article>
+        <!-- AREAS DE ACCION -->
+        <section class="areas-accion" id="hacemos">
+            <h2>Áreas de acción</h2>
+            <div class="areas-grid">
+                <article class="area-card">
+                    <img src="img-alegria-intensiva/web/index/areas-accion/talleres-inactivo-web.png" alt="Talleres"
+                        width="373" height="200">
+                    <a href="#">Talleres</a>
+                </article>
+                <article class="area-card">
+                    <img src="img-alegria-intensiva/web/index/areas-accion/investigacion-inactivo-web.png"
+                        alt="Investigación" width="373" height="200">
+                    <a href="#">Investigación</a>
+                </article>
+                <article class="area-card">
+                    <img src="img-alegria-intensiva/web/index/areas-accion/alianzas-inactivo-web.png" alt="Alianzas"
+                        width="373" height="200">
+                    <a href="#">Alianzas</a>
+                </article>
+                <article class="area-card">
+                    <img src="img-alegria-intensiva/web/index/areas-accion/proyectos-ianctivo-web.png"
+                        alt="Proyectos especiales" width="373" height="200">
+                    <a href="#">Proyectos especiales</a>
+                </article>
+                <article class="area-card">
+                    <img src="img-alegria-intensiva/web/index/areas-accion/visitas-inactivo-web.png"
+                        alt="Visitas en terreno" width="373" height="200">
+                    <a href="#">Visitas en terreno</a>
+                </article>
+                <article class="area-card">
+                    <img src="img-alegria-intensiva/web/index/areas-accion/comunidad-inactivo-web.png" alt="Comunidad"
+                        width="373" height="200">
+                    <a href="#">Comunidad</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SOCIOS ACTIVOS -->
+        <section class="socios" id="ayudar">
+            <h2>Socios activos</h2>
+            <div class="slider-socios">
+                <div class="socios-carrusel">
+
+                    <!-- Grupo logos originales -->
+                    <img src="img-alegria-intensiva/web/index/socios/baztarrica.svg" alt="Clínica Bazterrica" width="60"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/bipress.svg" alt="Prensa Bipress" width="150"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/buenosaires-ciudad.svg" alt="Buenos Aires Ciudad"
+                        widht="150" height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/garrahan.svg" alt="Hospital Garrahan" width="150"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/hospital-ninos.svg" alt="Hospital de niños"
+                        widht="48" height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/isoftland.svg" alt="Isofland" widht="118"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/panamerican.svg" alt="Panamerican" widht="141"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/pediatria.svg" alt="Pediatría" widht="150"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/puig.svg" alt="Puig" widht="150" height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/validated.svg" alt="Validated" widht="59"
+                        height="60">
+
+                    <!-- Grupo 2 duplicados para el efecto infinito -->
+                    <img src="img-alegria-intensiva/web/index/socios/baztarrica.svg" alt="Clínica Bazterrica" widht="60"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/bipress.svg" alt="Prensa Bipress" widht="150"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/buenosaires-ciudad.svg" alt="Buenos Aires Ciudad"
+                        widht="150" height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/garrahan.svg" alt="Hospital Garrahan" widht="150"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/hospital-ninos.svg" alt="Hospital de niños"
+                        widht="48" height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/isoftland.svg" alt="Isofland" widht="118"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/panamerican.svg" alt="Panamerican" widht="141"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/pediatria.svg" alt="Pediatría" widht="150"
+                        height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/puig.svg" alt="Puig" widht="150" height="60">
+                    <img src="img-alegria-intensiva/web/index/socios/validated.svg" alt="Validated" widht="59"
+                        height="60">
+
                 </div>
-            </section>
-
-            <!-- SOCIOS ACTIVOS -->
-            <section class="socios" id="ayudar">
-                <h2>Socios activos</h2>
-                <div class="slider-socios">
-                    <div class="socios-carrusel">
-
-                        <!-- Grupo logos originales -->
-                        <img src="img-alegria-intensiva/web/index/socios/baztarrica.svg" alt="Clínica Bazterrica" width="60" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/bipress.svg" alt="Prensa Bipress" width="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/buenosaires-ciudad.svg"
-                            alt="Buenos Aires Ciudad" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/garrahan.svg" alt="Hospital Garrahan" width="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/hospital-ninos.svg" alt="Hospital de niños" widht="48" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/isoftland.svg" alt="Isofland" widht="118" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/panamerican.svg" alt="Panamerican" widht="141" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/pediatria.svg" alt="Pediatría" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/puig.svg" alt="Puig" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/validated.svg" alt="Validated" widht="59" height="60">
-
-                        <!-- Grupo 2 duplicados para el efecto infinito -->
-                        <img src="img-alegria-intensiva/web/index/socios/baztarrica.svg" alt="Clínica Bazterrica" widht="60" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/bipress.svg" alt="Prensa Bipress" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/buenosaires-ciudad.svg"
-                        alt="Buenos Aires Ciudad" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/garrahan.svg" alt="Hospital Garrahan" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/hospital-ninos.svg" alt="Hospital de niños" widht="48" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/isoftland.svg" alt="Isofland" widht="118" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/panamerican.svg" alt="Panamerican" widht="141" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/pediatria.svg" alt="Pediatría" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/puig.svg" alt="Puig" widht="150" height="60">
-                        <img src="img-alegria-intensiva/web/index/socios/validated.svg" alt="Validated" widht="59" height="60">
-
-                    </div>
-                </div>   
+            </div>
     </main>
 
     <!-- FOOTER -->
@@ -152,12 +174,10 @@
             <a href="#" class="newsletter-footer">NEWSLETTER</a>
             <div class="redes">
                 <a href="https://www.youtube.com/@ongAlegriaIntensiva">
-                    <img src="img-alegria-intensiva/web/footer/youtube-icon.svg" alt="Youtube" width="41"
-                        height="39">
+                    <img src="img-alegria-intensiva/web/footer/youtube-icon.svg" alt="Youtube" width="41" height="39">
                 </a>
                 <a href="https://x.com/alegriaintensiv">
-                    <img src="img-alegria-intensiva/web/footer/x-icon.svg" alt="X" width="41"
-                        height="39">
+                    <img src="img-alegria-intensiva/web/footer/x-icon.svg" alt="X" width="41" height="39">
                 </a>
                 <a href="https://www.linkedin.com/company/alegriaintensiva/">
                     <img src="img-alegria-intensiva/web/footer/linkedin.svg" alt="Linkedin" width="41" height="39">
@@ -167,8 +187,7 @@
                         height="39">
                 </a>
                 <a href="https://www.facebook.com/alegriaintensiva">
-                    <img src="img-alegria-intensiva/web/footer/facebook-icon.svg" alt="Facebook" width="41"
-                        height="39">
+                    <img src="img-alegria-intensiva/web/footer/facebook-icon.svg" alt="Facebook" width="41" height="39">
                 </a>
             </div>
         </div>
