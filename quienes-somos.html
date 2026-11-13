@@ -15,18 +15,26 @@
 <body>
     <!-- HEADER (Navegacion) -->
     <header>
-        <nav>
-            <div class="inicio-contenedor">
-                <a href="index.html" class="boton-inicio"><img src="img-alegria-intensiva/web/logo-header-color.svg"
-                        alt="Inicio" width="110" height="31"></a>
-            </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+    <nav>
+        <label for="menu-toggle" class="menu-hamburguesa"></label>
+
+        <div class="inicio-contenedor">
+            <a href="index.html" class="boton-inicio">
+                <img src="img-alegria-intensiva/web/logo-header-color.svg" alt="Inicio" width="110" height="31">
+            </a>
+        </div>
+
+        <div class="menu-links">
             <a href="quienes-somos.html">QUIÉNES SOMOS</a>
             <a href="que-hacemos.html">QUÉ HACEMOS</a>
             <a href="como-ayudar.html">CÓMO AYUDAR</a>
             <a href="#">CONTACTO</a>
-            <a href="#" class="donar-nav">DONÁ ACÁ</a>
-        </nav>
-    </header>
+        </div>
+
+        <a href="#" class="donar-nav">DONÁ ACÁ</a>
+    </nav>
+</header>
 
     <main>
 
